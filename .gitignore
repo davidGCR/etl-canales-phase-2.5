@@ -1,7 +1,7 @@
 layer_test/
 libs-test/
 *.hcl
-*.tfstate
+# *.tfstate
 *.backup
 src/dyndb/.terraform
 src/proj_canales_25/.terraform
