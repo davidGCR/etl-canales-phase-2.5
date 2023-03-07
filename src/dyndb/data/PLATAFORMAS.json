@@ -1,0 +1,55 @@
+{
+    "name": {
+        "S": "PLATAFORMAS"
+    },
+    "folder": {
+        "S": "telemarketing"
+    },
+    "file_type": {
+        "S": "xlsx"
+    },
+    "schema": {
+        "L": [
+            {
+                "M": {
+                    "name": {
+                        "S": "COD_PERIODO"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "DES_PLATAFORMA"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "NOM_COORDINADOR"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "TIPO"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            }
+        ]
+    }
+}

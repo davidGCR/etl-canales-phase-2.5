@@ -1,0 +1,75 @@
+{
+    "name": {
+        "S": "OBJETIVOS_NIVEL"
+    },
+    "folder": {
+        "S": "telemarketing"
+    },
+    "file_type": {
+        "S": "xlsx"
+    },
+    "schema": {
+        "L": [
+            {
+                "M": {
+                    "name": {
+                        "S": "ANIO"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "MES"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "TIPO"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "NIVEL"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "NOMBRE_CALL"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "OBJETIVO"
+                    },
+                    "type": {
+                        "S": "float"
+                    }
+                }
+            }
+        ]
+    }
+}

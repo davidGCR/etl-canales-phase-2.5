@@ -1,0 +1,9 @@
+layer_test/
+libs-test/
+*.hcl
+*.tfstate
+*.backup
+src/dyndb/.terraform
+src/proj_canales_25/.terraform
+src/s3_upload/.terraform
+src/proj_canales_25/lambda_validator/lambda_function.zip

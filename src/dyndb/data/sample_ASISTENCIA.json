@@ -1,0 +1,115 @@
+{
+    "name": {
+        "S": "ASISTENCIA"
+    },
+    "folder": {
+        "S": "remoto_1"
+    },
+    "file_type": {
+        "S": "csv"
+    },
+    "schema": {
+        "L": [
+            {
+                "M": {
+                    "name": {
+                        "S": "UNIX"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "APELLIDOS_NOMBRES"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "SUPERVISOR"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "JEFE_SEDE"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "REGION"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "FECHA_INGRESO"
+                    },
+                    "type": {
+                        "S": "date"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "FECHA_BAJA"
+                    },
+                    "type": {
+                        "S": "date"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "FECHA"
+                    },
+                    "type": {
+                        "S": "date"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "ASISTENCIA"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            },
+            {
+                "M": {
+                    "name": {
+                        "S": "CS_APTO_SALUD"
+                    },
+                    "type": {
+                        "S": "string"
+                    }
+                }
+            }
+        ]
+    }
+}
