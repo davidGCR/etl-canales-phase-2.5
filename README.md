@@ -41,4 +41,21 @@ Para ejecutar las pruebas ejecute los archivos .sh en la carpeta:
 
         src/proj_canales_25/tests
 
+## 4. Subir schemas a DynamoDB
+- (1ra Ejecucion) Dirijase a la carpeta dyndb, inicialize terraform con:
+```bash
+terraform init
+``` 
+- Cree el json con el esquema en la carpeta: *data/*
+- Agregue el nombre del archivo json en el archivo dyndb_main.tf
+- Cree el estado con:
+```bash
+terraform plan
+```
+- Despliegue cambios a AWS con:
+```bash
+terraform apply --auto-approve
+```
+
+
 
