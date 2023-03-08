@@ -15,7 +15,7 @@ provider "aws" {
 
 locals {
   s3_landing_bucket = "auna-dla${var.env}-landingzone-s3"
-  xlsx_files = ["PLATAFORMAS", "OBJETIVOS_NIVEL"]
+  xlsx_files = ["PLATAFORMAS", "OBJETIVOS_NIVEL", "OBJETIVOS_CALL_CENTER"]
 }
 
 /* Objeto para subir xlsx a S3 */

@@ -35,27 +35,59 @@ Requerimientos para ejecutar el codigo
 
         terraform apply --auto-approve
         
-## 3. Ejecutar pruebas
+## 3. Probar Lambda con invoke+json
 
 Para ejecutar las pruebas ejecute los archivos .sh en la carpeta:       
 
         src/proj_canales_25/tests
 
-## 4. Subir schemas a DynamoDB
-- (1ra Ejecucion) Dirijase a la carpeta dyndb, inicialize terraform con:
+## 4. Prueba de validacion 1 (Flujo: excel => S3 => Lambda)
+
+### 4.1 Subir schema a DynamoDB
+- *Paso 0:* Dirijase a la carpeta dyndb. 
+```bash
+cd dyndb
+``` 
+ - *Paso 1 (Opcional):* Si es la primera ejecucion, inicialize terraform con:
 ```bash
 terraform init
 ``` 
-- Cree el json con el esquema en la carpeta: *data/*
-- Agregue el nombre del archivo json en el archivo dyndb_main.tf
-- Cree el estado con:
+
+- *Paso 2:* Cree el json con el esquema en la carpeta: *data/*
+- *Paso 3:* Agregue el nombre del archivo json en el archivo: *dyndb_main.tf*
+- *Paso 4:* Cree el estado con:
 ```bash
 terraform plan
 ```
-- Despliegue cambios a AWS con:
+- *Paso 5:* Despliegue cambios a AWS con:
 ```bash
 terraform apply --auto-approve
 ```
+- *Paso 6:* Revise archivos en la consola S3 para validar subida.
+
+### 4.1 Subir xlsx a S3 Landing
+
+- *Paso 0:* Dirijase a la carpeta s3_upload. 
+```bash
+cd s3_upload
+``` 
+ - *Paso 1 (Opcional):* Si es la primera ejecucion, inicialize terraform con:
+```bash
+terraform init
+``` 
+
+- *Paso 2:* Copie o mueva el archivo .xlsx a subir en la carpeta: *s3_upload/data/folder*
+- *Paso 3:* Agregue el nombre del archivo .xlsx en el archivo: *s3_main.tf*
+- *Paso 4:* Cree el estado con:
+```bash
+terraform plan
+```
+- *Paso 4:* Verifique si es necesario agregar la subscripcion con nuevo email. Si es necesario, modifique el archivo: *src/proj_canales_25/sns.tf* agregando el email en el bloque *locals*
+- *Paso 5:* Despliegue cambios a AWS con:
+```bash
+terraform apply --auto-approve
+```
+- *Paso 6:* Revise archivos en la consola S3 para validar subida.
 
 
 
