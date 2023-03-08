@@ -11,8 +11,8 @@ provider "aws" {
   shared_config_files      = ["~/.aws/config"]
   shared_credentials_files = ["~/.aws/credentials"]
   profile                  = "default"
+  # profile                  = "$terraform.workspace"
 }
-
 
 /* resource "aws_dynamodb_table_item" "plataformas_schema" {
   table_name = "auna-dl-${var.env}-storage-dsbcanales-dyndb-v1-audit-1"
