@@ -1,5 +1,5 @@
 locals {
-  email_list = ["dchoqueluque.veox@gmail.com"]
+  email_list = ["david.choqueluque@zat.pe"]
 }
 
 resource "aws_sns_topic" "test_canales_25" {

@@ -37,9 +37,11 @@ Requerimientos para ejecutar el codigo
         
 ## 3. Probar Lambda con invoke+json
 
-Para ejecutar las pruebas ejecute los archivos .sh en la carpeta:       
-
-        src/proj_canales_25/tests
+Para ejecutar las pruebas ejecute los archivos .sh en la carpeta: *src/proj_canales_25/lambdas/tests*. Ingrese parametros -n y -t
+```bash
+./invoke -n {nombre funcion} -t {input.json}
+```
+        
 
 ## 4. Prueba de validacion 1 (Flujo: excel => S3 => Lambda)
 

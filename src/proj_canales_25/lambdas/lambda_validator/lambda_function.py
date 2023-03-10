@@ -138,9 +138,9 @@ def lambda_handler(event, context):
         #print(dynamo_item)
         
         df = read_item_s3(bucket,prefix,dynamo_item['file_type'],dynamo_item['name'],dynamo_item['folder'])
-        df.columns = df.columns.str.upper()
-        
         print('====> df.columns: ', df.columns)
+        df.columns = df.columns.str.upper()
+        print('====> df.columns after: ', df.columns)
             
         validate_schema(df,dynamo_item['folder'],dynamo_item['name'],dynamo_item['schema'])
     

@@ -7,3 +7,7 @@ src/dyndb/.terraform
 src/proj_canales_25/.terraform
 src/s3_upload/.terraform
 src/proj_canales_25/lambda_validator/lambda_function.zip
+src/proj_canales_25/jobs/tests/*.csv
+*.zip
+*.txt
+~$*

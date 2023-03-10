@@ -6,7 +6,7 @@
         "S": "telemarketing"
     },
     "file_type": {
-        "S": "xlsx"
+        "S": "csv"
     },
     "schema": {
         "L": [
